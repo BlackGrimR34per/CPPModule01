@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   newZombie.cpp                                      :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yosherau <yosherau@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/12 13:52:51 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/12 14:42:50 by yosherau         ###   ########.fr       */
+/*   Created: 2025/09/12 14:49:29 by yosherau          #+#    #+#             */
+/*   Updated: 2026/01/15 21:44:46 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./Zombie.hpp"
+#include "../include/Zombie.hpp"
 
-Zombie	*newZombie(std::string name)
+int	main(void)
 {
-	Zombie	*newZombie = new Zombie(name);
-	return (newZombie);
+	Zombie *horde = zombieHorde(6, "Shiba Inu");
+	delete[] horde; 
 }

@@ -1,19 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/12 14:49:29 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/12 16:43:21 by yosherau         ###   ########.fr       */
+/*   Created: 2025/09/11 23:53:42 by yosherau          #+#    #+#             */
+/*   Updated: 2026/01/15 21:45:09 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef ZOMBIE_H
+# define ZOMBIE_H
 
-int	main(void)
+# include <string>
+# include <iostream>
+
+class Zombie
 {
-	Zombie *horde = zombieHorde(5, "Shiba Inu");
-	delete[] horde; 
-}
+	std::string	name;
+
+	public:
+		Zombie();
+		Zombie(std::string name);
+		~Zombie(void);
+		void		announce(void);
+		void		set_name(const std::string name);
+		std::string	get_name(void) const;
+};
+
+Zombie	*zombieHorde(int N, std::string name);
+
+#endif

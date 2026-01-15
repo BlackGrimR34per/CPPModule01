@@ -6,7 +6,7 @@
 /*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 22:14:25 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/20 18:14:44 by yosherau         ###   ########.fr       */
+/*   Updated: 2026/01/15 15:06:00 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ class Harl
 
 	public:
 		Harl();
+		~Harl();
 		void	complain(std::string level);
 };
 

@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/19 22:12:59 by yosherau          #+#    #+#             */
-/*   Updated: 2026/01/14 17:41:32 by yosherau         ###   ########.fr       */
+/*   Created: 2025/09/12 13:52:51 by yosherau          #+#    #+#             */
+/*   Updated: 2026/01/15 15:13:18 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+# include "../include/Zombie.hpp"
 
-int	main(void)
+Zombie	*newZombie(std::string name)
 {
-	Harl	harl;
-
-	harl.complain("DEBUG");
+	Zombie	*newZombie = new Zombie(name);
+	return (newZombie);
 }

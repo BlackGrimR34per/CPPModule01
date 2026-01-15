@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/12 16:21:02 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/12 16:34:01 by yosherau         ###   ########.fr       */
+/*   Created: 2025/09/11 23:53:27 by yosherau          #+#    #+#             */
+/*   Updated: 2026/01/15 21:42:31 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+# include "../include/Zombie.hpp"
 
-Zombie	*zombieHorde(int N, std::string name)
+int	main()
 {
-	Zombie	*zombieHorde = new Zombie[N];
-	for (int index = 0; index < N; index++)
-		zombieHorde[index].set_name(name);
-	return (zombieHorde);
+	Zombie	stackZombie("Yohen");
+	stackZombie.announce();
+	Zombie	*heapZombie = newZombie("Sheraun");
+	heapZombie->announce();
+	randomChump("Yogi");
+	delete heapZombie;
+	return (EXIT_SUCCESS);
 }

@@ -3,16 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yosherau <yosherau@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/11 23:57:03 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/12 14:48:38 by yosherau         ###   ########.fr       */
+/*   Updated: 2026/01/15 21:44:59 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "./Zombie.hpp"
+#include "../include/Zombie.hpp"
 
-# include <iostream>
+Zombie::Zombie(void)
+{
+	std::cout << "Default constructor called" << std::endl;
+}
 
 Zombie::Zombie(std::string name):
 	name(name)
@@ -25,7 +28,7 @@ Zombie::~Zombie(void)
 	std::cout << this->get_name() << ": has perished 🗿" << std::endl;
 }
 
-std::string	Zombie::get_name(void)
+std::string	Zombie::get_name(void) const
 {
 	return (this->name);
 }
@@ -33,4 +36,9 @@ std::string	Zombie::get_name(void)
 void	Zombie::announce(void)
 {
 	std::cout << this->get_name() << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}
+
+void	Zombie::set_name(const std::string name)
+{
+	this->name = name;
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yosherau <yosherau@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 22:14:25 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/19 22:33:51 by yosherau         ###   ########.fr       */
+/*   Updated: 2026/01/14 17:42:01 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,18 @@ class Harl
 	void	info(void);
 	void	warning(void);
 	void	error(void);
+	typedef void	(Harl::* harlFuncs)(void);
+	harlFuncs	fu[4];
+	std::string	levels[4] = {
+		"DEBUG",
+		"INFO",
+		"WARNING",
+		"ERROR"
+	};
 
 	public:
+		Harl();
+		~Harl();
 		void	complain(std::string level);
 };
 
