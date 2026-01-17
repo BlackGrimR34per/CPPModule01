@@ -1,30 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanA.hpp                                         :+:      :+:    :+:   */
+/*   include.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yosherau <yosherau@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/14 14:00:33 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/16 13:04:50 by yosherau         ###   ########.fr       */
+/*   Created: 2026/01/17 13:02:27 by yosherau          #+#    #+#             */
+/*   Updated: 2026/01/17 13:02:48 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HUMANA_H
-# define HUMANA_H
+#ifndef INCLUDE_HPP
+# define INCLUDE_HPP
 
-# include <string>
-# include "Weapon.hpp"
-
-class HumanA
-{
-	std::string	name;
-	Weapon		&weapon;
-
-	public:
-		void		attack(void);
-		std::string	getName(void) const;
-		HumanA(std::string name, Weapon &weapon);
-};
+#include <iostream>
+#include <stdlib.h>
+#include <fstream>
+#include <string>
 
 #endif

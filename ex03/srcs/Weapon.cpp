@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yosherau <yosherau@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 11:20:00 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/16 13:08:29 by yosherau         ###   ########.fr       */
+/*   Updated: 2026/01/17 12:59:24 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
-
-#include <iostream>
+#include "../include/Weapon.hpp"
 
 Weapon::Weapon(std::string type):
 	type(type)

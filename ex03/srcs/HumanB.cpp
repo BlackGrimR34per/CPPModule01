@@ -3,19 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yosherau <yosherau@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 12:56:38 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/16 13:26:53 by yosherau         ###   ########.fr       */
+/*   Updated: 2026/01/17 13:00:35 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanB.hpp"
-
-# include <iostream>
+#include "../include/HumanB.hpp"
 
 HumanB::HumanB(std::string name):
-	name(name)
+	name(name), weapon(NULL)
 {
 	std::cout << "HumanB was created" << std::endl;
 }

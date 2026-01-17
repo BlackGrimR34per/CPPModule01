@@ -6,12 +6,12 @@
 /*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/19 22:14:25 by yosherau          #+#    #+#             */
-/*   Updated: 2026/01/15 15:06:00 by yosherau         ###   ########.fr       */
+/*   Updated: 2026/01/17 13:35:26 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HARL_H
-# define HARL_H
+#ifndef HARL_HPP
+# define HARL_HPP
 
 # include <string>
 # include <iostream>
@@ -29,12 +29,7 @@ class Harl
 	void	error(void);
 	typedef void	(Harl::* harlFuncs)(void);
 	harlFuncs	fu[4];
-	std::string	levels[4] = {
-		"DEBUG",
-		"INFO",
-		"WARNING",
-		"ERROR"
-	};
+	std::string	levels[4];
 
 	public:
 		Harl();

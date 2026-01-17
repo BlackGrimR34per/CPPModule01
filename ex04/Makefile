@@ -6,7 +6,7 @@
 #    By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/08 18:08:47 by yosherau          #+#    #+#              #
-#    Updated: 2026/01/17 12:58:18 by yosherau         ###   ########.fr        #
+#    Updated: 2026/01/17 13:34:14 by yosherau         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ CC			=		c++
 
 FLAGS		=		-Wall -Wextra -Werror -std=c++98
 
-NAME		=		UnnecessaryViolence
+NAME		=		SedIsForLosers
 
 SRCS_DIR	=		./srcs
 

@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanA.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/20 18:12:47 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/20 18:26:29 by yosherau         ###   ########.fr       */
+/*   Created: 2025/09/14 14:00:33 by yosherau          #+#    #+#             */
+/*   Updated: 2026/01/17 13:36:00 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+#ifndef HUMANA_HPP
+# define HUMANA_HPP
 
-int	main(int argc, char *argv[])
+# include <string>
+# include <iostream>
+# include "Weapon.hpp"
+
+class HumanA
 {
-	Harl		harl;
-	std::string	input;
+	std::string	name;
+	Weapon		&weapon;
 
-	if (argc != 2)
-	{
-		std::cerr << "Harl has complained there's not enough arguments" << std::endl;
-		exit(EXIT_FAILURE);
-	}
-	input = argv[1];
-	harl.complain(input);
-}
+	public:
+		void		attack(void);
+		std::string	getName(void) const;
+		HumanA(std::string name, Weapon &weapon);
+};
+
+#endif

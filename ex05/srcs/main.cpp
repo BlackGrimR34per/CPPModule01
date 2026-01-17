@@ -1,28 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yosherau <yosherau@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/13 16:57:49 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/14 14:33:31 by yosherau         ###   ########.fr       */
+/*   Created: 2025/09/19 22:12:59 by yosherau          #+#    #+#             */
+/*   Updated: 2026/01/17 13:06:52 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WEAPON_H
-# define WEAPON_H
+#include "../include/Harl.hpp"
 
-# include <string>
-
-class Weapon
+int	main(void)
 {
-	std::string	type;
+	Harl	harl;
 
-	public:
-		Weapon(std::string	type);
-		const std::string	&getType(void) const;
-		void				setType(const std::string type);
-};
-
-#endif
+	harl.complain("DEBUG");
+}

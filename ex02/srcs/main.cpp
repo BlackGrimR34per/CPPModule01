@@ -6,13 +6,11 @@
 /*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 16:47:44 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/12 18:38:43 by yosherau         ###   ########.fr       */
+/*   Updated: 2026/01/17 13:31:38 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
-#include <iostream>
-#include <iomanip>
+#include "../include/include.hpp"
 
 int	main()
 {

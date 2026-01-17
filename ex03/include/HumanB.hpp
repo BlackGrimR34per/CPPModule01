@@ -3,23 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yosherau <yosherau@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/16 12:56:49 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/16 13:13:30 by yosherau         ###   ########.fr       */
+/*   Updated: 2026/01/17 13:35:53 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HUMANB_H
-# define HUMANB_H
+#ifndef HUMANB_HPP
+# define HUMANB_HPP
 
 # include <string>
+# include <iostream>
 # include "Weapon.hpp"
 
 class HumanB
 {
 	std::string	name;
-	Weapon		*weapon = NULL;
+	Weapon		*weapon;
 
 	public:
 		void		attack(void);

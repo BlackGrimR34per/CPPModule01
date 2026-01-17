@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yosherau <yosherau@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/17 01:02:35 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/19 21:49:25 by yosherau         ###   ########.fr       */
+/*   Updated: 2026/01/17 13:30:42 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <stdlib.h>
-#include <fstream>
-#include <string>
+#include "../include/include.hpp"
 
 int	main(int argc, char *argv[])
 {
@@ -28,7 +25,7 @@ int	main(int argc, char *argv[])
 	std::string	toReplace = argv[3];
 
 	std::ifstream	inputFile;
-	inputFile.open(fileName, std::ios::in);
+	inputFile.open(fileName.c_str(), std::ios::in);
 	if (!inputFile.is_open() || inputFile.peek() == EOF)
 	{
 		std::cerr << "File issue :D" << std::endl;
@@ -41,7 +38,9 @@ int	main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 
-	std::ofstream	outputFile(fileName + ".replace", std::ios::out);
+	std::string	outputFileName;
+	outputFileName = fileName + ".replace";
+	std::ofstream	outputFile(outputFileName.c_str(), std::ios::out);
 	std::string		line;
 	std::string		newLine;
 	int				pos;

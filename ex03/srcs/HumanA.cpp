@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yosherau <yosherau@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 14:02:49 by yosherau          #+#    #+#             */
-/*   Updated: 2025/09/16 13:04:41 by yosherau         ###   ########.fr       */
+/*   Updated: 2026/01/17 12:58:54 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanA.hpp"
-# include <iostream>
+#include "../include/HumanA.hpp"
 
 HumanA::HumanA(std::string name, Weapon &weapon):
 	name(name), weapon(weapon)

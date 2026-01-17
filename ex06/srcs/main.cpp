@@ -1,34 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yosherau <yosherau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/11 23:53:42 by yosherau          #+#    #+#             */
-/*   Updated: 2026/01/17 13:36:18 by yosherau         ###   ########.fr       */
+/*   Created: 2025/09/20 18:12:47 by yosherau          #+#    #+#             */
+/*   Updated: 2026/01/17 13:23:05 by yosherau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-# define ZOMBIE_HPP
+#include "../include/Harl.hpp"
 
-# include <string>
-# include <stdlib.h>
-# include <iostream>
-
-class Zombie
+int	main(int argc, char *argv[])
 {
-	std::string	name;
+	Harl		harl;
+	std::string	input;
 
-	public:
-		Zombie(std::string name);
-		~Zombie(void);
-		void		announce(void);
-		std::string	get_name(void);
-};
-
-Zombie		*newZombie(std::string name);
-void		randomChump(std::string name);
-
-#endif
+	if (argc != 2)
+	{
+		std::cerr << "Harl has complained there's not enough arguments" << std::endl;
+		return (EXIT_FAILURE);
+	}
+	input = argv[1];
+	harl.complain(input);
+}
